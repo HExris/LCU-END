@@ -26,7 +26,8 @@ app.get('/champions', (req, res) => {
 })
 
 app.get('/config', async (req, res) => {
-    getConfig(res)
+    // getConfig(res)
+    res.send('hello world')
 })
 
 app.get('/test', (req, res) => {
