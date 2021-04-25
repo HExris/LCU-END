@@ -18,6 +18,8 @@ app.use(bodyParser.json());
 // 创建 application/x-www-form-urlencoded 编码解析
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.use('/',express.static(path.join(__dirname, 'public')));
+
 app.listen(port, () => {
   initData()
 })
